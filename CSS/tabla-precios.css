@@ -14,6 +14,7 @@
     /*Se crean clases diferentes ya que despues podriamos utilizaer las mismas propiedades que ya tienen las clases creadas como la de flex y texto centrado*/
     .flex{
         display: flex; /* Sabemos que el flex nos sirve para colocar todo en columnas dentro de la misma fila*/
+        flex-wrap: wrap; /* Esta propiedad sirve para que cuando demos un espacio de width: osea tamaño este abarque el porcentaje% que demos */
     }
     .text-center{
         text-align: center;
@@ -21,11 +22,13 @@
     .columna{
         background: rgb(233, 224, 212);
         border: 1px solid rgb(12, 12, 30);
-        margin: 10px;
+        margin: 0 auto;
         padding: 10px;
         border-radius: 5px; /*Esto sirve para darle bordes a al recuadro de la columna*/
         /*USO DE BOX SHADOW: para darle sombra a las cajas o contenedores de la informacion*/
         box-shadow: 10px 10px 5px rgb(139, 138, 138); /*Con los dos primeros le damos la orientacion con el 3ro px: el tamaño del degradado y agregamos el color*/
+        width: 23%;
+        box-sizing: border-box; /*Esta propiedad permite que todos los elementos con bordes se unan*/
     }
     .precio{
         font-size: 50px;
@@ -39,4 +42,20 @@
         text-decoration: none; /*Quita la linea que aparece detras del texto*/
         border-radius: 3px;/*redondea los bordes*/
         margin-bottom: 10px; /*separa el margen del boton*/
+    }
+    .btn-precio:hover{ /*Recordar que hover es el que nos permite darle que al pasar el mouse sobre el boton este cambie de color*/
+        background: rgb(45, 25, 25);
+    }
+    @media (max-width: 1070px){
+       .columna{
+        width: 45%;
+        margin-bottom: 20px;
+       }
+      
+    }
+    @media (max-width: 600px){
+        .columna{
+            width: 100%;
+            margin-bottom: 20px;
+           }
     }
