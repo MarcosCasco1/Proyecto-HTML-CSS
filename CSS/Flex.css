@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    width: 80%;
+    height: 500px;
+    background: #ff5c29;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   /* justify-content: flex-start; Sirve para pocisionar el contenido que tengamos ya sea al inicio con stars, o al final con end.. */
+   /*justify-content: center; con esto se coloca todos los elemntos en el centro*/
+   /*justify-content: space-between; Coloca todos los elemtos con un espacio ya sea el primero a la orilla, el segudno enmedio y el tercero al final*/
+   /* justify-content: space-around;
+    /*align-items: flex-end; con esto nos movera las cajas ya sea arriba, abajo y al centro con center. 
+    align-items: start;*/
+    align-items: center;
+    /*Si quiero que los ELEMENTOS HIJOS, Ocupen el espacio completo debo de utilizar la propiedad de alingn-items:stretch */
+    /*align-content: ;Solo funciona cuando estamos trabajando con mas de dos lineas de elementos*/
+
+}
+
+.hijo{
+    background: #00B285;
+    width: 200px;
+    height: 100px;
+    color: #fff;
+    margin: 30px;
+    padding: 20px;
+    font-size: 40px;
+    text-align: center;
+   /* flex-grow: 1;
+    flex-shrink: 0;/* Esta propiedad es la que reestringe el tamaño segun lo que hayamos puesto en el width..*/
+    flex: 1 1 auto;
+    /*order: 2;Esta propiedad nos sirve para poner un determinado orden a los elementos que tenemos en el div
+    pero tambien para eso tendremos que crear una clase propia y darle valores como se puede ver abajo*/ 
+}
+/*.orderletra{
+    order:1
+}*/
