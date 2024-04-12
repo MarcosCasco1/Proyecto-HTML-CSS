@@ -1,0 +1,70 @@
+/*Aqui es cuando llamamos a una funcion en especifico y le damos un valor*/
+h2{
+    color: crimson;
+}
+
+/* Esta es para cuando le damos un id= a algo*/
+#unico{
+    color: rgb(119, 4, 4);
+    font-size: 50px;
+}
+
+/* Esta es para cuando formamos una clase
+y podemos añadir mas de una clase dentro de la misma*/
+.Azul{
+    color: rgb(23, 41, 138);
+}
+.fondo{
+    background: #a2ad05;
+}
+
+/*He creado la classe colores para saber: */
+.Colores{
+    color: tomato; /*Estos ya estan predefinidos*/
+
+}
+.ColorRGB{
+    color:rgb(119, 4, 4)
+}
+.celeste{/*Aqui los trabajos en Exadecimal*/
+    color: #0f97c0;
+}
+
+/*MARGENES Y PADDING
+primero lo que hicimos fue ponerle color al fondo de las letras*/
+
+.margen{
+    background: #FFC94A;
+   /* margin-left: 100px;*/ /* Hace un margen al lado izquierdo*/
+   /* margin: 100px;/* Con esta aplicamos un solo margen a los 4 lados*/
+    /*margin: 200px 100px; con este podemos darle 200 arriba y abajo y 100 a izquiera y derecha*/
+    margin: 100px 10px 20px 300px; /*arriba, izquierda, inferior y derecho*/ 
+
+}
+.padding{
+    /*Este es un margen pero interior*/
+    background: #90D26D;
+    padding: 100px;/*Todos los lados midan lo mismo*/
+}
+
+/*COLUMNAS*/
+.columnas{
+    background: #66d8ec;
+    color: #042f3b;
+    padding: 20px;
+    width: 25%;  
+    margin: 10px;
+}
+.Columnasfila{
+    display: flex; /* Este nos sirve para hacer que las columnas se pocisionen una al lado de la otra*/
+}
+
+/*BLOQUES*/
+.bloques{
+    background: salmon;
+    display: inline-block; /*Este transforma un elemnto de bloque en un elemento de linea*/
+}
+.bloq1{
+    background: rgb(236, 194, 190);
+    display: block;
+}

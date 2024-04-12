@@ -1,0 +1,15 @@
+button{ /* Cuando el mouse no este encima*/
+    background: #00224D;
+    color: aqua;
+    
+
+} /*Cuando el mouse este sobre*/
+button:hover{
+    background: #3a88f0;
+    color: rgb(6, 12, 12);
+
+}
+button:active{ /*Y cuando ya haga un click, el boton cambiara de color*/
+    background: #033575;
+    color: rgb(122, 128, 128);
+}

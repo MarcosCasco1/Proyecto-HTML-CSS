@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Pyme Financiero</title>
+    <!-- Despues de la etiqueta title podemos poner los links de todos los archivos que necesitemos llamar -->
+    <link rel="stylesheet" href="CSS/Estilos.css"> <!--Esto sirve para linkear la pagina de estilos a dentro del index-->
+</head>
+<body>
+
+    <!--Parrafos
+     <b></b> coloca la letra en negrita
+     <hr> es un separador que hace una linea
+     <br> hace un salto de linea -->
+    <h1> MI PYME FINANCIERO</h1>
+    <p class="Azul">R.L DE C.V.</p> 
+    <a href="https://www.facebook.com/mipymefinancierohn">Visita Nuestra Pagina de Facebook</a> <!--Este es para crear un enlace-->
+    <div> <!-- Esto permite hacer divisiones-->
+        <h2> AGENCIAS</h2>
+        <pre> <!--El pre sirve para ordenar el parrafo tal como va escrito-->
+           <b><i>My Bonnie lies over the ocean.
+          
+            My Bonnie lies over the sea.
+          
+            My Bonnie lies over the ocean.
+          
+            Oh, bring back my Bonnie to me.</i></b>
+         </pre>
+    </div>
+
+      <!--Atributos
+      <a href=""></a> esta es una ancla, y tiene una etiqueta ref
+      https:// Solo es necesatio cuando estamos vinculando archivos externos y si son internos no sera necesario escribir https:// solo la ubicacion.
+       <img src="LOGO NUEVO.jpg" alt=""> esto sirve para colocar una imagen -->
+     <div>
+        <h1>
+            <a href="https://www.google.com/search?sca_esv=fd299e0f5b2672c9&sca_upv=1&q=mi+pyme+financiero&uds=AMwkrPs4mDHqV7QfY9nYaKRHgvE9SYYEvorF5TRz9YKWOSFk0tlGYxe5aJYbn1FJIrrBgLh0F28NJIA_H7MRjoN1nuH1eWtjiDUtY9Czy_g16hW4mBLBRaDOJyJViiwDwizkKCEerfUxO5fHKLwmrfHyZxUdrJwnW6hKjS_yb16OvqCyR15Zq8DMd3q7XYeCWtey1tTPGFCY4KWSaIZNEf9JWZlCD9dGYQhsz3KzOWcRlK24sQItL_tYQyHOAYzgVnssylqfnH7ImgEnUXfOLEVmkZXo8GRVxNn3oSvZNHWhqR9YnxJZvtU&udm=2&prmd=invsmbz&sa=X&ved=2ahUKEwiAyo2Dy7qFAxV_RzABHQjaD6cQtKgLegQIEhAB&biw=633&bih=636&dpr=1">Google</a>
+        </h1>
+        <img src="LOGO NUEVO.jpg" alt="">
+    </div>
+
+    <div>
+         <!--Listas 
+        para hacer una lista siempre colocamos <ul>
+        Ordenadas con Numeros:  esto debe de ir dentro de ol
+        desordenadas con visñetas: <li></li> pero esto debe de ir dentro de ul -->
+
+        <ul><!-- Listas desordenadas-->
+            <li>Danli</li>
+            <li>El Paraìso </li>
+            <li>Siguatepeque </li>
+            <li>Comayagua </li>
+            <li>Santa Rosa de Copan </li>
+            <li>Intibuca</li>
+
+        </ul>
+
+        <ol><!--Listas Ordenadas-->
+            <li>Danli</li>
+            <li>El Paraìso </li>
+            <li>Siguatepeque </li>
+            <li>Comayagua </li>
+            <li>Santa Rosa de Copan </li>
+            <li>Intibuca</li>
+        </ol>
+    </div>
+
+    <div>
+        <!-- Elementos de Semantica
+         <header>: siempre va a ser donde va la informacion importante de la empresa.
+         <nav>: iria en el menu de navegacion
+            -->
+              <header><!--Esto sirve para que nosotros definamos realmente que es la parte que estaremos redactando -->
+                <p>Logo corporativo</p>
+             </header>
+             <nav> <!-- Esta es la idea de la seccion por la cual se podra navegar-->
+                 <a href="">Nuestra Empresa</a>
+                 <a href="">Quienes Somos</a>
+             </nav>
+             <section> 
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores doloribus quas assumenda nihil rerum voluptatum ipsum voluptates sunt nesciunt cum, voluptatibus dolore repudiandae magnam enim eligendi pariatur laudantium explicabo quisquam!</p>
+
+             </section>
+              <aside> <!--seccion donde tengamos publicidad en nuestro sitio Wed. -->
+                <p>Publicidad</p>
+             </aside>
+    </div>
+
+    <div>
+        <!-- FUNDAMENTOS DE CSS -->
+
+        <!-- el primer metodo es utilizando la etiqueta Style dentro de HTML pero "NO" es recomendable. -->
+        <!-- <h1 style="color: blueviolet;font-size: 30px;">Este es un ejemplo de CSS</h1> -->
+        <h1 id="unico">Este es un encabezado h1 </h1>
+        <!-- pero me genera que todos los h1 en los archivos adquieren la misma propiedad para cambiar eso debemos 
+         agregamos al h1 un identificador: id="unico" pero no se puede usar en otro parrafo entonces 
+        casi no se usa entonces ocuparemos algo llamado class="" -->
+        <p class="Azul fondo">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione numquam aperiam, obcaecati reiciendis fugiat sunt corporis eum ducimus accusamus suscipit quisquam? Incidunt suscipit error accusantium animi cupiditate autem aut temporibus.
+        </p>
+    </div>
+
+    <div>
+        <!-- COLORES -->
+        <h1 class="Colores">Colores</h1>
+        <p class="ColorRGB">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quasi. Molestias quibusdam maxime doloribus. Perferendis voluptates id nesciunt error, eos corporis voluptas quaerat vel dolores quo similique sequi nemo consequatur.</p>
+        <p class="celeste">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis dolores quod, unde, distinctio officia dolorum ipsum illo iusto suscipit alias id odit? Illo harum non labore! Odit, reprehenderit temporibus. Assumenda.</p>
+    </div>
+
+    <div>
+         <!-- MARGENES: es la separacion que podemos generar entre el texto
+             y PADDINGS: son los margenes interiores -->
+         <h1 class="margen">Margenes y padding</h1>
+         <p class="padding">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni tempore dolores reprehenderit ducimus minus! Sit eius deleniti commodi temporibus. Tempora inventore eaque dicta tempore nesciunt sit accusantium cum fugiat id.</p>
+    </div>
+
+    <div>
+         <!--COLUMNAS-->
+         <nav>
+            <a href="">Inicio</a>
+            <a href="">Nosotros</a>
+            <a href="">Contactos</a>
+         </nav>
+
+         <section class="Columnasfila">
+            <p class="columnas">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt tempora error obcaecati. Aperiam alias reiciendis perferendis ea corporis vel necessitatibus cum quas! Vitae deserunt, a repellat necessitatibus esse distinctio officiis!</p>
+            <p class="columnas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam facere temporibus odio consectetur maxime! Omnis, quos harum dignissimos odio cupiditate ipsam? Enim hic quasi nesciunt atque eaque adipisci sunt alias.</p>
+            <p class="columnas">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptate soluta quos alias minus facilis minima accusamus voluptas labore tenetur ab odio modi veniam, maiores cupiditate adipisci. Aut, adipisci nesciunt?</p>
+         </section>
+    </div>
+
+    <div>
+        <!--BLOQUES-->
+        <h1 class="bloques">Universidad Politecnica de Honduras</h1>
+        <h1 class="bloques">Universidad Politecnica de Honduras</h1>
+        <h1 class="bloques">Universidad Politecnica de Honduras</h1>
+        <div>
+            <a class="bloq1" href="">Inicio</a>
+            <a class="bloq1" href="">Nosotros</a>
+            <a class="bloq1" href="">Contactos</a>
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
+</html>

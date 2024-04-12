@@ -1,0 +1,46 @@
+.nav-enlace{
+    display: inline-block; /*Estamos trabajando con archivos de bloque*/
+    background-color: salmon;
+    color: aliceblue;
+    padding: 10px 30px;
+    text-decoration: none;
+
+}
+
+/*La Propiedad hover hace que el pasar el mouse sobre las anclas cambian su color */
+.nav-enlace:hover{
+    background-color: rgb(139, 55, 46);
+}
+.nav1{
+    background-color: rgb(8, 20, 34);
+    display:flex; /*Sirve para unir las cajas en especie de boton pero no son tal*/
+
+}
+
+.nav-boton{
+    background: salmon;
+    color: beige;
+    padding: 10px 0px;
+    border: 2px solid #fff;/*Esta propiedad permite crear un borde dentro del boton menu*/
+    display: none;
+}
+/*ESTA ES LA PROPIEDAD DE ADAPTABILIDAD...*/
+/*PROPIEDAD COLUMN*/
+@media (max-width: 600px) { /*Este sirve y hace funcionamiento en cuanto a como se vera nuestra
+    pagina en diferente entorno ya sea con computadora o celular*/
+    .nav1{
+        background: black;
+        flex-direction: column;
+    }
+ 
+    .nav-enlace{
+        margin: 10px 0px;
+    }
+
+    .nav-boton{
+        display: inline-block;
+    }
+}
+
+/*HACER UN BOTON QUE DESPLIEGUE UN MENU la explicacion esta en Nav-Boton*/
+
