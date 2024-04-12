@@ -40,7 +40,12 @@
     .nav-boton{
         display: inline-block;
     }
+    .desaparece{ /*creacion de la clase desaparece para ocultar los botones cuando la pantalla cambia de tamaño*/
+        display: none; 
+    }
+
 }
+
 
 /*HACER UN BOTON QUE DESPLIEGUE UN MENU la explicacion esta en Nav-Boton*/
 

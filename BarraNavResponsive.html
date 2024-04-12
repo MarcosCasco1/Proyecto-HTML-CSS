@@ -9,12 +9,25 @@
 <body>
     <!--Esto se utiliza para hacer enlaces con colores-->
     <nav class="nav1">
-        <button class="nav-boton">Menú</button>
-        <a href="" class="nav-enlace">Inicio</a>
-        <a href="" class="nav-enlace">Nosotros</a>
-        <a href="" class="nav-enlace">Servicios</a>
-        <a href="" class="nav-enlace">Contactos</a>
+        <button class="nav-boton" onclick="accion()">Menú</button> <!-- El onclick detecta el click sobre el boton-->
+        <a href="" class="nav-enlace desaparece">Inicio</a>
+        <a href="" class="nav-enlace desaparece">Nosotros</a>
+        <a href="" class="nav-enlace desaparece">Servicios</a>
+        <a href="" class="nav-enlace desaparece">Contactos</a>
     </nav>
+
+<!-- AQUI SE TRABAJA CON JAVASCRIP YA QUE DEBEMOS DE DARLE LA PROPIEDAD A accion()-->
+    <script>
+        // Ahora lo que se tiene que hacer es que cuando se borre los botones mediante la clase desaparece este ejecute una accion con la cual quite la clase desaparece, y me muestre los demas botones.. al hacer click en menu.
+        function accion(){
+            console.log('esta funcionando mi boton') 
+            var ancla = document.getElementsByClassName('nav-enlace');
+            for(var i =0; i < ancla.length; i++){// con este ciclo toma el ancla y va a agregar o quitar la clase desaparece.
+                ancla[i].classList.toggle('desaparece');
+            }
+        }
+    </script> <!--Con esto le podemos mandar un mensaje a la consola tambien se le creo una variable para que la 
+    clase nav-enlace se pueda leer toda completa-->
   
 </body>
 </html>
